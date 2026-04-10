@@ -2,19 +2,14 @@ import java.util.*;
 
 public class TrainConsistApp {
     public static void main(String[] args) {
-        LinkedList<String> train = new LinkedList<>();
+        Set<String> set = new LinkedHashSet<>();
 
-        train.add("Engine");
-        train.add("Sleeper");
-        train.add("AC");
-        train.add("Cargo");
-        train.add("Guard");
+        set.add("Engine");
+        set.add("Sleeper");
+        set.add("Cargo");
+        set.add("Guard");
+        set.add("Sleeper");
 
-        train.add(2, "Pantry");
-
-        train.removeFirst();
-        train.removeLast();
-
-        System.out.println(train);
+        System.out.println(set);
     }
 }
