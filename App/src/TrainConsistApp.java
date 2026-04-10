@@ -2,18 +2,13 @@ import java.util.*;
 
 public class TrainConsistApp {
     public static void main(String[] args) {
-        System.out.println("=== UC2 ===");
+        System.out.println("=== UC3 ===");
 
-        List<String> bogies = new ArrayList<>();
-        bogies.add("Sleeper");
-        bogies.add("AC Chair");
-        bogies.add("First Class");
+        Set<String> ids = new HashSet<>();
+        ids.add("BG101");
+        ids.add("BG102");
+        ids.add("BG101"); // duplicate
 
-        System.out.println("After add: " + bogies);
-
-        bogies.remove("AC Chair");
-        System.out.println("After remove: " + bogies);
-
-        System.out.println("Contains Sleeper? " + bogies.contains("Sleeper"));
+        System.out.println("Unique IDs: " + ids);
     }
 }
