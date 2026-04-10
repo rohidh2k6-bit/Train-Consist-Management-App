@@ -2,13 +2,19 @@ import java.util.*;
 
 public class TrainConsistApp {
     public static void main(String[] args) {
-        System.out.println("=== UC3 ===");
+        LinkedList<String> train = new LinkedList<>();
 
-        Set<String> ids = new HashSet<>();
-        ids.add("BG101");
-        ids.add("BG102");
-        ids.add("BG101"); // duplicate
+        train.add("Engine");
+        train.add("Sleeper");
+        train.add("AC");
+        train.add("Cargo");
+        train.add("Guard");
 
-        System.out.println("Unique IDs: " + ids);
+        train.add(2, "Pantry");
+
+        train.removeFirst();
+        train.removeLast();
+
+        System.out.println(train);
     }
 }
